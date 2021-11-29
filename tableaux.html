@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Tableaux</title>
+        <style type="text/css">
+            table {
+                border-collapse: collapse;   
+                caption-side: bottom;
+            }
+            td, th {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--         
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+
+            </tr>
+
+            <tr>
+                <td>Pierre</td>
+                <td>Jacques</td>
+            </tr>
+
+        </table> -->
+
+        <!-- tableau complexe -->
+
+        <table>
+            <caption>Les personnages du jeu</caption>
+
+           <thead>
+               <tr>
+                   <th>Prenoms</th>
+                   <th>Professions</th>
+                   <th>Est célibataire ?</th>
+                   <th>Est en couple ?</th>
+               </tr>
+           </thead> 
+
+           <tbody>
+               <tr>
+                   <td>Pierre</td>
+                   <td>Jardinier</td>
+                   <td>Oui</td>
+                   <td>Non</td>
+               </tr>
+               <tr>
+                   <td>Jeanne</td>
+                   <td>Infirmière</td>
+                   <td>Non</td>
+                   <td>Oui</td>
+               </tr>
+               <tr>
+                   <td>Yves</td>
+                   <td>Politicien</td>
+                   <td colspan="2">On ne sait pas</td>
+                   
+               </tr>
+           </tbody>
+
+           <tfoot>
+               <tr>
+                   <th>Prénom</th>
+                   <th>Professions</th>
+                   <th>Est cléibataire ?</th>
+                   <th>Est en couple ?</th>
+               </tr>
+           </tfoot>
+
+        </table><br>
+
+
+        <table>
+            <caption>Les personnages du jeu</caption>
+            <tr>
+                <th>Prenom</th>
+                <td>Pierre</td>
+                <td>Jeanne </td>
+                <td>Yves</td>
+            </tr>
+
+            <tr>
+                <th>Profession</th>
+                <td>Jardinier</td>
+                <td>Infirmière</td>
+                <td>Politicien</td>
+            </tr>
+
+            <tr>
+                <th>Est célibataire ?</th>
+                <td>Oui</td>
+                <td>Non</td>
+                <td rowspan="2">On ne sait pas</td>
+            </tr>
+            
+            <tr>
+                <th>Est en couple</th>
+                <td>Non</td>
+                <td>Oui</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
